@@ -10,27 +10,37 @@
 
 <body>
     <header class="site-header">
-        <div class="container">
-            <nav class="navbar">
-                <a class="brand" href="index.html">
-                    <img src="assets/reko-logo.png" alt="REKO logo">
-                </a>
+        <div class="container navbar">
+            <a class="brand" href="index.html">
+                <img src="assets/reko-logo.png" alt="REKO" />
+            </a>
 
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="how-it-works.html">How It Works</a>
-                    <a href="for-markets.html">For Markets</a>
-                    <a class="active" href="for-producers.html">For Producers</a>
-                    <a href="for-communities.html">For Communities</a>
-                    <a href="about.html">About</a>
-                </div>
+            <button class="hamburger" data-mobile-toggle type="button">Menu</button>
 
-                <div class="nav-cta">
-                    <a class="btn btn-primary" href="https://rekohub.com" target="_blank" rel="noopener">Partner with
-                        REKO</a>
-                </div>
-            </nav>
+            <ul class="nav-links">
+                <li><a data-nav href="index.html">Home</a></li>
+                <li><a data-nav href="how-it-works.html">How It Works</a></li>
+                <li><a data-nav href="for-markets.html">For Markets</a></li>
+                <li><a data-nav href="for-producers.html">For Producers</a></li>
+                <li><a data-nav href="for-communities.html">For Communities</a></li>
+                <li><a data-nav href="about.html">About</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a class="btn btn-primary" href="https://rekohub.com" target="_blank" rel="noopener">Partner with
+                    REKO</a>
+            </div>
         </div>
+
+        <nav class="mobile-nav" data-mobile-menu>
+            <a data-nav href="index.html">Home</a>
+            <a data-nav href="how-it-works.html">How It Works</a>
+            <a data-nav href="for-markets.html">For Markets</a>
+            <a data-nav href="for-producers.html">For Producers</a>
+            <a data-nav href="for-communities.html">For Communities</a>
+            <a data-nav href="about.html">About</a>
+            <a href="https://rekohub.com" target="_blank" rel="noopener">Partner with REKO</a>
+        </nav>
     </header>
 
     <section class="hero" style="background-image:url('assets/for-producers.jpg');">
@@ -46,10 +56,9 @@
                 Get confirmed orders before you harvest. Less waste, more time farming, and happy local customers.
             </p>
 
-            <div>
-                <a class="btn btn-primary" href="https://rekohub.com" target="_blank" rel="noopener">Partner with
-                    REKO</a>
-                <a class="btn btn-secondary" href="how-it-works.html">See how it works</a>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="https://rekohub.com" target="_blank" rel="noopener">Partner
+                    with REKO</a>
             </div>
         </div>
 
@@ -153,6 +162,7 @@
             <div class="small">© 2026 REKO. Fresh local food for all.</div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
