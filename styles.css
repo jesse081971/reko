@@ -600,3 +600,13 @@ h3 {
 .mb-0 {
     margin-bottom: 0;
 }
+
+@media (min-width: 981px) {
+    .mobile-nav {
+        display: none !important;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
